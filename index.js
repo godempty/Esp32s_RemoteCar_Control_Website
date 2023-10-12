@@ -35,7 +35,13 @@ document.addEventListener("DOMContentLoaded", function () {
     isJoystickMoving = true;
     moveJoystick(e);
   });
+  joystickKnob.addEventListener("touchstart", (e) => {
+    isJoystickMoving = true;
+    moveJoystick(e);
+  });
   window.addEventListener("mousemove", moveJoystick);
+  joystickKnob.addEventListener("touchmove", moveJoystick);
+  joystickKnob.addEventListener("touchend", endJoystick);
   window.addEventListener("mouseup", endJoystick);
 
   function moveJoystick(event) {
