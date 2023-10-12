@@ -3,69 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="./main.js"></script>
+    <script src="./index.js"></script>
     <link rel="stylesheet" href="./main.css" />
     <title>Controller</title>
   </head>
   <body>
-    <table id="Controlltable">
+    <table id="mainTable">
       <tr class="screen">
         <td></td>
       </tr>
       <tr class="controller">
-        <td></td>
         <td>
-          <button
-            type="button"
-            class="btn"
-            ontouchstart="GoUp()"
-            ,
-            ontouchend="Stop()"
-          >
-            <span>UP</span>
-          </button>
+          <div id="joystick-container">
+            <div id="joystick-knob"></div>
+          </div>
         </td>
-        <td></td>
-      </tr>
-      <tr class="controller">
-        <td>
-          <button
-            type="button"
-            class="btn"
-            ontouchstart="GoLeft()"
-            ,
-            ontouchend="Stop()"
-          >
-            <span>LEFT</span>
-          </button>
-        </td>
-        <td></td>
-        <td>
-          <button
-            type="button"
-            class="btn"
-            ontouchstart="GoRight()"
-            ,
-            ontouchend="Stop()"
-          >
-            <span>RIGHT</span>
-          </button>
-        </td>
-      </tr>
-      <tr class="controller">
-        <td></td>
-        <td>
-          <button
-            type="button"
-            class="btn"
-            ontouchstart="GoDown()"
-            ,
-            ontouchend="Stop()"
-          >
-            down
-          </button>
-        </td>
-        <td></td>
       </tr>
     </table>
   </body>

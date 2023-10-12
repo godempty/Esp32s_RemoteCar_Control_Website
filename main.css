@@ -1,3 +1,6 @@
+#mainTable {
+  margin: 0px auto;
+}
 .btn {
   width: 100%;
   height: 100%;
@@ -7,10 +10,7 @@
   color: white;
   border-radius: 30%;
 }
-#Controlltable {
-  display: flex;
-  justify-content: center;
-}
+
 .screen {
   width: 50vw;
   height: 30vh;
@@ -18,5 +18,29 @@
   color: gray;
 }
 body {
-  background-color: rgb(25, 25, 20);
+  background-color: rgb(35, 35, 30);
+}
+.controller {
+  display: flex;
+  justify-content: center;
+}
+#joystick-container {
+  width: 220px;
+  height: 220px;
+  background-color: #ccc;
+  border-color: black;
+  border-width: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#joystick-knob {
+  width: 60px;
+  height: 60px;
+  background-color: #3498db;
+  border-radius: 50%;
+  position: absolute;
+  cursor: pointer;
 }
